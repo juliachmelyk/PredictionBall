@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Куля для прийняття рішень</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="surface">
+        <div class="form-group">
+            <div class="field"><input type="text" id="nameBox" placeholder="Введіть Ваше ім'я"></div>
+            <div class="field"><input type="text" id="questionBox" placeholder="Введіть Ваше питання"></div>
+            <div class="field"><button class="btn btn-primary" id="submit" onclick="GenerateAnswer()">Запитати</button>
+            </div>
+        </div>
+        <div class="ball-and-shadow">
+
+            <div class="ball">
+
+                <div class="upper-shine"></div>
+                <div class="inside">
+                    <div class="answer">
+                        <div class="content">
+                            <div class="result" id="response">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-shadow"></div>
+                </div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
