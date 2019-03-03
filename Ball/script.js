@@ -1,5 +1,5 @@
-function GenerateAnswer()
-{
+function GenerateAnswer() {
+    const allResult = [];
     const responses = [
         'так, звичайно!',
         'забудьте про це!',
@@ -19,9 +19,19 @@ function GenerateAnswer()
         'духи говорять "ні"!',
         'шансів мало.',
         'можливо.'
-        ];
-let choice = responses[Math.floor(Math.random()*responses.length)];
-let name = nameBox.value;
-document.getElementById("response").innerHTML = name + ', відповідь для Вас: ' + choice
+    ];
+
+    const result = {
+        name: nameBox.value,
+        question: questionBox.value,
+        answer: responses[Math.floor(Math.random() * responses.length)]
+    }
+    allResult.push(result);
+    document.getElementById("response").innerHTML = result.name + ', відповідь для Вас: ' + result.answer;
+    return allResult;
 }
+
+
+
+
 

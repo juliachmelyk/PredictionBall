@@ -122,7 +122,7 @@
     bottom: 5em;
     left: 0;
     margin: auto;
-    height: 100px;
+    height: 30%;
     width: 300px;
     margin-top: 5%;
   }
@@ -135,4 +135,21 @@
     font-family: 'Courier New', Courier, monospace;
     color: #000000;
   }
-  .field {clear:both; text-align:right; line-height:25px;}
+  .field {
+  clear:both; 
+  text-align:right; 
+  line-height:25px;
+}
+  .results {
+  clear: both;
+  text-align: right;
+  line-height: 25px;
+  top: 500px;
+  right: 0;
+  bottom: 5em;
+  left: 0;
+  margin: auto;
+  height: 30%;
+  width: 300px;
+  margin-top: 300px;
+}
